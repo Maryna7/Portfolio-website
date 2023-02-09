@@ -164,7 +164,7 @@ button:focus,
 }
 
 .img-holder{
-  width: 250px;
+  width: 220px;
   margin-right: 40px;
 }
 
@@ -320,7 +320,6 @@ button:focus,
   }
 
   .img-holder {
-    width: 195px;
     margin: var(--margin-centering);
   }
 
@@ -336,7 +335,7 @@ button:focus,
 
 @media all and (min-width: 500px) and (max-width: 750px){
   .img-holder {
-    width: 220px;
+    width: 200px;
   }
   
   .project-list {
