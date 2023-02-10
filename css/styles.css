@@ -123,6 +123,10 @@ button:focus,
   text-align: right;
 }
 
+.nav-list{
+  padding: 0;
+}
+
 .nav-list li{
   display: inline-block;
   margin-left: var(--spacing-15);
@@ -334,6 +338,7 @@ button:focus,
 
 
 @media all and (min-width: 500px) and (max-width: 750px){
+
   .img-holder {
     width: 200px;
   }
@@ -351,6 +356,10 @@ button:focus,
   }
   h2{
     font-size: var(--spacing-20);
+  }
+
+  .page-header__item {
+    flex: 0 1 167px;
   }
 
   .project-list {
