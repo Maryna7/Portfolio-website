@@ -110,12 +110,12 @@ button:focus,
   position: relative;
 }
 
-.page-header__item img{
+.logo img{
   width: 100%;
   vertical-align: top;
 }
 
-.page-header__item:first-child {
+.logo {
   width: 200px;
 }
 
@@ -153,21 +153,13 @@ button:focus,
 
 /* ////////////// BURGER MENU ///////////////////// */
 
-#menuToggle{
+.menuToggle{
   display: none;
-  position: absolute;
-  top: 10px;
-  right: 10px;
   width: 33px;
   height: 27px;
-  z-index: 1;
 }
 
-.page-header__item:first-child{
-  z-index: 1;
-}
-
-.page-header__item input{
+.menu-opener{
   display: none;
   position: absolute;
   top: 10px;
@@ -180,7 +172,7 @@ button:focus,
   -webkit-touch-callout: none;
 }
 
-#menuToggle span{
+.menuToggle span{
   display: block;
   width: 33px;
   height: 4px;
@@ -192,27 +184,27 @@ button:focus,
   transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menuToggle span:first-child{
+.menuToggle span:first-child{
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-child(3){
+.menuToggle span:nth-child(3){
   transform-origin: 0% 100%;
 }
 
-.page-header__item input:checked + #menuToggle span:first-child{
+.menu-opener:checked + .menuToggle span:first-child{
   transform: rotate(45deg) translate(1px, -2px);
 }
 
-.page-header__item input:checked + #menuToggle span:nth-child(2){
+.menu-opener:checked + .menuToggle span:nth-child(2){
   opacity: 0;
 }
 
-.page-header__item input:checked + #menuToggle span:nth-child(3){
+.menu-opener:checked + .menuToggle span:nth-child(3){
   transform: rotate(-45deg) translate(-1px, 4px);
 }
 
-.page-header__item input:checked ~ ul{
+.menu-opener:checked ~ .nav .nav-list{
   transform: none;
 }
 
@@ -380,19 +372,23 @@ button:focus,
     margin-bottom: var(--spacing-30);
   }
   /* Burger menu */
-  #menuToggle,
-  .page-header__item input{
+  .menuToggle,
+  .menu-opener{
     display: block;
   }
 
-  .nav-list{
+  .nav{
     position: absolute;
+    width: 100%;
+    top: 100%;
     left: 0;
-    right: 0;
+  }
+
+  .nav-list{
     width: 100%;
     background: var(--white);
     transform-origin: 0% 0%;
-    transform: translate(0, -150%); 
+    transform: translate(-100%, 0); 
     transition: transform 0.5s linear;
     text-align: center;
     z-index: 0;
