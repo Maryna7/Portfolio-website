@@ -283,17 +283,39 @@ button:focus,
   text-align: var(--left-alignment);
 }
 
+.project-list img{
+  vertical-align: top;
+  width: 100%;
+}
+
+.project-list .img-link{
+  display: inline-block;
+  margin-bottom: var(--spacing-15);
+}
+
+.project-list .image-holder{
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-holder .img-link{
+  width: 48%;
+}
+
 .project__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--lightgray);
   padding: 0 var(--spacing-15) var(--spacing-15);
 }
 
-.project__item:last-child {
+/* .project__item:last-child {
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-}
+} */
 
 
 /* ******** CONTACT PAGE ********** */
