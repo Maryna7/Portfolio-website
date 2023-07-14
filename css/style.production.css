@@ -305,6 +305,18 @@ button:focus{
   padding: 0 15px 15px;
 }
 
+.project__item ul {
+  padding: 0;
+}
+
+.project__item ul li {
+  display: inline-block;
+  padding: 2px 7px;
+  margin: 0 4px 4px 0;
+  background: #fdf9f9;
+  border-radius: 7%;
+}
+
 
 /* ******** CONTACT PAGE ********** */
 
