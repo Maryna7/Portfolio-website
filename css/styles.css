@@ -244,7 +244,7 @@ button:focus,
 
 .skills-info-table td,
 .skills-info-table th{
-  padding: 7px var(--spacing-10);
+  padding: var(--spacing-5) var(--spacing-10);
 }
 
 @keyframes flight {
@@ -283,39 +283,22 @@ button:focus,
   text-align: var(--left-alignment);
 }
 
+.project-list .img-link{
+  display: inline-block;
+  margin: 0 -15px;
+}
+
 .project-list img{
   vertical-align: top;
   width: 100%;
 }
 
-.project-list .img-link{
-  display: inline-block;
-  margin-bottom: var(--spacing-15);
-}
-
-.project-list .image-holder{
-  display: flex;
-  justify-content: space-between;
-}
-
-.image-holder .img-link{
-  width: 48%;
-}
-
 .project__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   background-color: var(--lightgray);
   padding: 0 var(--spacing-15) var(--spacing-15);
 }
-
-/* .project__item:last-child {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-} */
 
 
 /* ******** CONTACT PAGE ********** */
@@ -339,14 +322,6 @@ button:focus,
   width: 100%;
   margin-bottom: var(--spacing-10);
   padding: var(--spacing-5);
-}
-
-
-/* ******** REGISTRATION PAGE ********** */
-
-
-.registration-form{
-  text-align: var(--left-alignment);
 }
 
 
