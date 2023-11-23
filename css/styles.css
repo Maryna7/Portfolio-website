@@ -219,14 +219,29 @@ button:focus,
 }
 
 .img-holder{
-  width: 220px;
-  margin-right: 40px;
+  width: 200px;
+  margin-right: 50px;
+  position: relative;
+}
+
+.img-holder::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;
+  background-color: #f9f9f9;
+  background-image: linear-gradient(to right top, var(--white) 54%, gray 52%, gray 54%, var(--white) 60%), linear-gradient(to right top, gray 6%, var(--white) 10%);
+  background-size: 8px 8px;
+  border-radius: 10%;
 }
 
 .img-holder img{
   width: 100%;
   vertical-align: top;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 .text-holder span{
@@ -244,7 +259,13 @@ button:focus,
 
 .skills-info-table td,
 .skills-info-table th{
+  text-align: center;
   padding: var(--spacing-5) var(--spacing-10);
+}
+
+.skills-info-table td:first-child,
+.skills-info-table th:first-child{
+  text-align: left;
 }
 
 @keyframes flight {
@@ -448,10 +469,6 @@ button:focus,
 
 
 @media all and (min-width: 500px) and (max-width: 750px){
-  /* Home page main content */
-  .img-holder {
-    width: 200px;
-  }
   /* Work page */
   .project-list {
     grid-template-columns: 1fr 1fr;
