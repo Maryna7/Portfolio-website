@@ -537,6 +537,10 @@ button:focus,
     margin-bottom: var(--spacing-30);
   }
 
+  .showMenu .nav{
+    transform: translateY(28%);
+  }
+
   /* main content */
   .main-info-section{
     padding: var(--spacing-50) 0;
@@ -565,6 +569,10 @@ button:focus,
 
 
 @media all and (min-width: 500px) and (max-width: 750px){
+
+  .showMenu .nav{
+    transform: translateY(40%);
+  }
 
   .main-info-section{
     padding: var(--spacing-75) 0;
@@ -605,17 +613,13 @@ button:focus,
     right: 0;
     z-index: 99;
     background: var(--primary-color);
-    padding: 15px 10px;
+    padding: 0px 7px;
   }
 
 
   .nav-list li{
     display: block;
     margin-bottom: 5px;
-  }
-
-  .showMenu .nav{
-    transform: translateY(40%);
   }
 
   .hamburger {

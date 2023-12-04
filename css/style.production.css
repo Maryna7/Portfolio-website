@@ -635,6 +635,11 @@ button:focus{
     margin-bottom: 30px;
   }
 
+  .showMenu .nav{
+    -webkit-transform: translateY(28%);
+            transform: translateY(28%);
+  }
+
   /* main content */
   .main-info-section{
     padding: 50px 0;
@@ -667,6 +672,11 @@ button:focus{
 
 
 @media all and (min-width: 500px) and (max-width: 750px){
+
+  .showMenu .nav{
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
 
   .main-info-section{
     padding: 75px 0;
@@ -712,18 +722,13 @@ button:focus{
     right: 0;
     z-index: 99;
     background: #477cb0;
-    padding: 15px 10px;
+    padding: 0px 7px;
   }
 
 
   .nav-list li{
     display: block;
     margin-bottom: 5px;
-  }
-
-  .showMenu .nav{
-    -webkit-transform: translateY(40%);
-            transform: translateY(40%);
   }
 
   .hamburger {
