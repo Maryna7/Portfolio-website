@@ -635,9 +635,13 @@ button:focus{
     margin-bottom: 30px;
   }
 
+  .nav {
+    padding: 0;
+  }
+
   .showMenu .nav{
-    -webkit-transform: translateY(28%);
-            transform: translateY(28%);
+    -webkit-transform: translateY(35%);
+            transform: translateY(35%);
   }
 
   /* main content */
@@ -672,6 +676,10 @@ button:focus{
 
 
 @media all and (min-width: 500px) and (max-width: 750px){
+
+  .nav {
+    padding: 0 7px;
+  }
 
   .showMenu .nav{
     -webkit-transform: translateY(40%);
@@ -722,7 +730,6 @@ button:focus{
     right: 0;
     z-index: 99;
     background: #477cb0;
-    padding: 0px 7px;
   }
 
 
